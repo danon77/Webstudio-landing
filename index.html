@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay__off" id="overlay"></div>
+
+    <header class="header">
+        <div class="header-inner">
+            <img src="images/header-logo.svg" alt="WebStudio logo" class="logo">
+
+            <div onclick="myFunction()" class="burger" id="burger">
+                <span class="center-line" id="center-line"></span>
+            </div>
+
+            <nav class="burger-menu__off" id="burger-menu">
+                <ul class="burger-list">
+                    <li class="first-item">
+                        <a href="" class="list-item">Студія</a>
+                    </li>
+
+                    <li class="second-item">
+                        <a href="" class="list-item">Портфоліо</a>
+                    </li>
+
+                    <li class="third-item">
+                        <a href="" class="list-item">Контакти</a>
+                    </li>
+
+                    <div class="contacts">
+                        <a href="" class="number">+38 096 111 11 11</a>
+                        <a href="" class="mail">info@devstudio.com</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="" class="link">Instagram</a>
+
+                        <div class="line"></div>
+
+                        <a href="" class="link">Twitter</a>
+
+                        <div class="line"></div>
+
+                        <a href="" class="link">Facebook</a>
+
+                        <div class="line"></div>
+
+                        <a href="" class="link">LinkedIn</a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="img-wrapper">
+            <div class="img-inner">
+                <h1 class="img-title">Ефективні рішення для вашого бізнесу</h1>
+                <button onclick="mySecondFunction()" class="img-button">
+                    Замовити послугу
+                </button>
+                
+                <div class="user-data__off" id="user-data">
+                    <div onclick="mySecondFunction()" class="user-data__cross">
+                        <img src="images/close.svg" alt="Close" class="close-icon">
+                    </div>
+
+                    <h4 class="user-data__title">
+                        Залиште свої дані, ми вам передзвонимо
+                    </h4>
+
+                    <label for="" class="user-data__form">
+                        Ім'я
+                        <input type="text" class="user-data__input">
+                        <img src="images/person.svg" alt="" class="form-img" id="person">
+                    </label>
+
+                    <label for="" class="user-data__form">
+                        Телефон
+                        <input type="text" class="user-data__input">
+                        <img src="images/phone.svg" alt="" class="form-img" id="phone">
+                    </label>
+
+                    <label for="" class="user-data__form">
+                        Пошта
+                        <input type="text" class="user-data__input">
+                        <img src="images/email.svg" alt="" class="form-img" id="email">
+                    </label>
+
+                    <label for="" class="user-comment__form">
+                        Коментар
+                        <input placeholder="Введіть текст" type="text" class="user-comment__input">
+                    </label>
+
+                    <label for="" class="conditions">
+                        <input type="checkbox" class="checkbox">
+
+                        <p class="conditions__text">
+                            Погоджуюся з розсилкою та приймаю 
+                            <a href="#" class="conditions__link">Умови договору</a>
+                        </p>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <section class="our-benefits">
+            <div class="benefits-item">
+                <div class="icon-wrapper">
+                    <img src="images/antenna.svg" alt="Antenna icon" class="icon">
+                </div>
+
+                <h3 class="benefit-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+
+                <p class="benefit-text">
+                    Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                </p>
+            </div>
+
+            <div class="benefits-item">
+                <div class="icon-wrapper">
+                    <img src="images/clock.svg" alt="Clock icon" class="icon">
+                </div>
+
+                <h3 class="benefit-title">ПУНКТУАЛЬНІСТЬ</h3>
+
+                <p class="benefit-text">
+                    Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                </p>
+            </div>
+
+            <div class="benefits-item">
+                <div class="icon-wrapper">
+                    <img src="images/diagram.svg" alt="Diagram icon" class="icon">
+                </div>
+
+                <h3 class="benefit-title">ПЛАНУВАННЯ</h3>
+
+                <p class="benefit-text">
+                    Так само консультація з широким активом значною мірою зумовлює.
+                </p>
+            </div>
+
+            <div class="benefits-item">
+                <div class="icon-wrapper">
+                    <img src="images/astronaut.svg" alt="Astronaut icon" class="icon">
+                </div>
+
+                <h3 class="benefit-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+
+                <p class="benefit-text">
+                    Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                </p>
+            </div>
+        </section>
+
+        <section class="our-team">
+            <h1 class="our-team__title">Наша команда</h1>
+
+            <div class="worker-card">
+                <div class="worker-photo first-photo"></div>
+
+                <h6 class="worker-name">Ігор Дем'яненко</h6>
+                <h6 class="worker-major">Product Designer</h6>
+
+                <div class="worker-links">
+                    <img src="images/instagram.svg" alt="Instagram link" class="link-icon">
+                    <img src="images/twitter.svg" alt="Twitter link" class="link-icon">
+                    <img src="images/facebook.svg" alt="Facebook link" class="link-icon">
+                    <img src="images/linkedin.svg" alt="Linkedin link" class="link-icon">
+                </div>
+            </div>
+
+            <div class="worker-card">
+                <div class="worker-photo second-photo"></div>
+
+                <h6 class="worker-name">Ольга Рєпіна</h6>
+                <h6 class="worker-major">Frontend Developer</h6>
+
+                <div class="worker-links">
+                    <img src="images/instagram.svg" alt="Instagram link" class="link-icon">
+                    <img src="images/twitter.svg" alt="Twitter link" class="link-icon">
+                    <img src="images/facebook.svg" alt="Facebook link" class="link-icon">
+                    <img src="images/linkedin.svg" alt="Linkedin link" class="link-icon">
+                </div>
+            </div>
+
+            <div class="worker-card">
+                <div class="worker-photo third-photo"></div>
+
+                <h6 class="worker-name">Микола Тарасов</h6>
+                <h6 class="worker-major">Marketing</h6>
+
+                <div class="worker-links">
+                    <img src="images/instagram.svg" alt="Instagram link" class="link-icon">
+                    <img src="images/twitter.svg" alt="Twitter link" class="link-icon">
+                    <img src="images/facebook.svg" alt="Facebook link" class="link-icon">
+                    <img src="images/linkedin.svg" alt="Linkedin link" class="link-icon">
+                </div>
+            </div>
+
+            <div class="worker-card">
+                <div class="worker-photo fourth-photo"></div>
+
+                <h6 class="worker-name">Михайло Єрмаков</h6>
+                <h6 class="worker-major">UI Designer</h6>
+
+                <div class="worker-links">
+                    <img src="images/instagram.svg" alt="Instagram link" class="link-icon">
+                    <img src="images/twitter.svg" alt="Twitter link" class="link-icon">
+                    <img src="images/facebook.svg" alt="Facebook link" class="link-icon">
+                    <img src="images/linkedin.svg" alt="Linkedin link" class="link-icon">
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <h1 class="clients-title">Постійні клієнти</h1>
+
+            <div class="clients-cards">
+                <div class="client-card">
+                    <img src="images/client1.svg" alt="" class="client-logo">
+                </div>
+
+                <div class="client-card">
+                    <img src="images/client2.svg" alt="" class="client-logo">
+                </div>
+
+                <div class="client-card">
+                    <img src="images/client3.svg" alt="" class="client-logo">
+                </div>
+
+                <div class="client-card">
+                    <img src="images/client4.svg" alt="" class="client-logo">
+                </div>
+
+                <div class="client-card">
+                    <img src="images/client5.svg" alt="" class="client-logo">
+                </div>
+
+                <div class="client-card">
+                    <img src="images/client6.svg" alt="" class="client-logo">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="images/footer-logo.svg" alt="" class="footer-logo">
+
+        <div class="footer-contacts">
+            <h6 class="location">м. Київ, пр-т Лесі Українки, 26</h6>
+            <h6 class="footer-mail">info@devstudio.com</h6>
+            <h6 class="footer-number">+38 096 111 11 11</h6>
+        </div>
+
+        <div class="footer-links__wrapper">
+            <h4 class="links-title">приєднуйтесь</h4>
+
+            <div class="footer-links">
+                <div class="footer-link__wrapper">
+                    <img src="images/footer-instagram.svg" alt="Our Instagram" class="footer-link">
+                </div>
+                
+
+                <div class="footer-link__wrapper">
+                    <img src="images/footer-twitter.svg" alt="Our Twitter" class="footer-link">
+                </div>
+                
+
+                <div class="footer-link__wrapper">
+                    <img src="images/footer-facebook.svg" alt="Our Facebook" class="footer-link">
+                </div>
+                
+
+                <div class="footer-link__wrapper">
+                    <img src="images/footer-linkedin.svg" alt="Our Linkedin" class="footer-link">
+                </div>
+                
+            </div>
+
+            <div class="our-newsletter">
+                <h6 class="newsletter-title">Підпишіться на розсилку</h6>
+
+                <input placeholder="E-mail" type="text" class="footer-form">
+
+                <button class="newsletter-link">
+                    <h6 class="newsletter-link__text">Підписатися</h6>
+                    <img src="images/send.svg" alt="Send icon" class="newsletter-link__icon">
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
